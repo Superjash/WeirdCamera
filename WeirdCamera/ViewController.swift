@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Photos
+import AVFoundation
 import GPUImage
 
 class ViewController: UIViewController {
@@ -19,6 +21,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .white
         
+        AVCaptureDevice.requestAccess(for: .video) { (granted: Bool) -> Void in
+            PHPhotoLibrary.requestAuthorization { (status) in
+                DispatchQueue.main.async {
+                    if granted {
+                        self.setupCamera()
+                    }
+                }
+            }
+        }
+    }
+    
+    private func setupCamera() {
         previewImageView = GPUImageView(frame: view.bounds)
         view.addSubview(previewImageView)
         
@@ -27,10 +41,9 @@ class ViewController: UIViewController {
         camera.outputImageOrientation = .portrait
         camera.addTarget(filter)
         
-        filter = GPUImageFilter(fragmentShaderFromFile: "")
+        filter = GPUImageFilter(fragmentShaderFromFile: "CustomShader")
         filter.addTarget(previewImageView)
         
         camera.startCapture()
     }
 }
-
