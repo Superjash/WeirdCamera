@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     }
     
     private func setupCamera() {
-        // 改 still camera
         camera = GPUImageStillCamera.init(sessionPreset: AVCaptureSession.Preset.hd1280x720.rawValue, cameraPosition: AVCaptureDevice.Position.back)
         camera.outputImageOrientation = .portrait
         camera.frameRate = 30
