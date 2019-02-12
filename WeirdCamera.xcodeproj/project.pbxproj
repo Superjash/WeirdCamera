@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A0D07F522115AB5007C2480 /* shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E7E7A22058F33007862F8 /* shader.fsh */; };
 		3A0E7E4D22042491007862F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E7E4C22042491007862F8 /* AppDelegate.swift */; };
 		3A0E7E4F22042491007862F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0E7E4E22042491007862F8 /* ViewController.swift */; };
 		3A0E7E5222042491007862F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0E7E5022042491007862F8 /* Main.storyboard */; };
@@ -49,7 +50,7 @@
 		3A0E7E6822042493007862F8 /* WeirdCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeirdCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0E7E6C22042493007862F8 /* WeirdCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeirdCameraUITests.swift; sourceTree = "<group>"; };
 		3A0E7E6E22042493007862F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A0E7E7A22058F33007862F8 /* CustomShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomShader.h; sourceTree = "<group>"; };
+		3A0E7E7A22058F33007862F8 /* shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shader.fsh; sourceTree = "<group>"; };
 		DEFA16D68BDD27BAE617881B /* Pods-WeirdCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeirdCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeirdCamera/Pods-WeirdCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		F454B95F1DEAF1CD9A9C9339 /* Pods_WeirdCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeirdCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,7 +116,7 @@
 			children = (
 				3A0E7E4C22042491007862F8 /* AppDelegate.swift */,
 				3A0E7E4E22042491007862F8 /* ViewController.swift */,
-				3A0E7E7A22058F33007862F8 /* CustomShader.h */,
+				3A0E7E7A22058F33007862F8 /* shader.fsh */,
 				3A0E7E5022042491007862F8 /* Main.storyboard */,
 				3A0E7E5322042493007862F8 /* Assets.xcassets */,
 				3A0E7E5522042493007862F8 /* LaunchScreen.storyboard */,
@@ -257,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0D07F522115AB5007C2480 /* shader.fsh in Resources */,
 				3A0E7E5722042493007862F8 /* LaunchScreen.storyboard in Resources */,
 				3A0E7E5422042493007862F8 /* Assets.xcassets in Resources */,
 				3A0E7E5222042491007862F8 /* Main.storyboard in Resources */,
